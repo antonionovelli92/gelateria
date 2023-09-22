@@ -1,17 +1,27 @@
 import React from "react";
 
-const Gelato = ({ nome, img, descrizione, prezzo, categoria }) => {
+const Gelato = ({ nome, decrizione, img, prezzo, categoria }) => {
   return (
-    < article className="gelato" >
-      <img src={img} alt={nome} />
-      <div className="gelato-footer">
-        <h4>{nome}</h4>
-        <h4 className="price">{prezzo}€</h4>
+    <article className="gelato">
+      <div className="img-container">
+        <img src={img} alt={nome} className="img" />
       </div>
-      <p className="item-text">{descrizione}</p>
-    </article >
-
-  )
+      <div className="prd-info">
+        <header className="prd-header">
+          <div>
+            <h5>{nome}</h5>
+            <h6>{categoria}</h6>
+          </div>
+          <span className="prd-prezzo">
+            {/* prezzo con la virgola */}
+            <h6>{(prezzo / 100).toFixed(2)}€</h6>
+          </span>
+        </header>
+        <hr />
+        <p>{decrizione}</p>
+      </div>
+    </article>
+  );
 };
 
 export default Gelato;
