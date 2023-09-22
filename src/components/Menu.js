@@ -29,7 +29,6 @@ const Menu = () => {
   const filtraProdotti = ((categoria, index) => {
     setSelected(index);
     //Se indico all ripristino allo stato iniziale
-
     if (categoria === "all") {
       setProdottiFiltrati(prodotti);
       return;

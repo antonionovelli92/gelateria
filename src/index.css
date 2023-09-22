@@ -53,6 +53,7 @@ code {
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -70,39 +71,50 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
+
 p {
   color: var(--grey-color);
   font-size: 0.9rem;
   letter-spacing: var(--letter-spacing);
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   h3 {
     font-size: 2rem;
   }
+
   h4 {
     font-size: 1.25rem;
   }
+
   body {
     font-size: 1rem;
   }
+
   h1,
   h2,
   h3,
@@ -235,10 +247,14 @@ p {
 }
 
 .prd-prezzo {
-  padding: 0.1rem 0.225rem;
-  border-radius: var(--radius);
+  border-radius: 25px;
+  padding: 0.75rem;
   background-color: var(--secondary-blue);
   color: var(--text-color);
+}
+
+.prd-prezzo:hover {
+  background-color: var(--delete-color);
 }
 
 .prd-info p {
@@ -250,6 +266,7 @@ p {
   .container {
     max-width: 800px;
   }
+
   .img-container {
     height: 125px;
     width: 150px;
@@ -262,6 +279,7 @@ p {
   .prd-info {
     gap: 0.8rem;
   }
+
   .prd-info p {
     font-size: 0.765rem;
   }

@@ -2,7 +2,7 @@ import React from "react";
 
 const Gelato = ({ nome, decrizione, img, prezzo, categoria }) => {
   return (
-    <article className="gelato">
+    <article className="gelato shadow-5">
       <div className="img-container">
         <img src={img} alt={nome} className="img" />
       </div>
@@ -12,9 +12,9 @@ const Gelato = ({ nome, decrizione, img, prezzo, categoria }) => {
             <h5>{nome}</h5>
             <h6>{categoria}</h6>
           </div>
-          <span className="prd-prezzo">
+          <span className="prd-prezzo mx-1">
             {/* prezzo con la virgola */}
-            <h6>{(prezzo / 100).toFixed(2)}€</h6>
+            {(prezzo / 100).toFixed(2)}€
           </span>
         </header>
         <hr />
